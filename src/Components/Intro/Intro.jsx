@@ -54,7 +54,7 @@ const Intro = () => {
       ></div>
       <div className="blur" style={{ 
         background:'rgb(193 245 255)',
-        top: '25rem',
+        top: '30rem',
         width: '21rem',
         height: '11rem',
         left: '-7rem'
