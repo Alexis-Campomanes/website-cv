@@ -4,13 +4,14 @@
     height: 90vh;
     margin-bottom: 8rem;
     margin-top: 11rem;
+    position: relative;
     
     .awesome{
         display: flex;
         flex-direction: column;
         position: relative;
         align-items: flex-start;
-        flex: 1 1;
+        flex: 1;
         >:nth-child(1){
           font-size: 3rem;
           font-weight: bold;
@@ -27,17 +28,12 @@
           margin-top: 1rem;
         }
         .s-button{
-          margin-top: 1rem;
+          margin-top: 3rem;
           padding: 11px 26px 11px 26px;
           &:hover{
             transform: scale(1.1);
             cursor: pointer;
           }
-        }
-        .cards{
-          display: flex;
-          align-items: flex-start;
-          flex: 1 1;
         }
         .blur{
           position: absolute;
@@ -46,9 +42,35 @@
           border-radius: 50%;
           background: #edd0ff;
           z-index: -9;
-          top: -2rem;
-          left: 56%;
+          top: 18rem;
+          left: -5rem;
           filter:blur(72px)
         }
+    }
+    .cards{
+      display: flex;
+      align-items: flex-start;
+      flex: 1;
+      .cards-conteiner{
+        position: relative;
+      }
+      .cards-glasses{
+        position: absolute;
+      }
+      .cards-humble{
+        position: relative;
+      }
+      .blur-cards{
+          position: absolute;
+          width: 30rem;
+          height: 17rem;
+          border-radius: 50%;
+          background: #edd0ff;
+          z-index: -9;
+          top: 15rem;
+          left: 50rem;
+          filter:blur(72px)
+        
+      }
     }
 }
