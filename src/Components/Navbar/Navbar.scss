@@ -22,10 +22,10 @@
         align-items: center;
         justify-content: center;
         list-style: none;
-        gap: 6rem;
+        gap: 4rem;
         }
         .n-list>ul>li{
-          font-weight: 400;
+          font-weight: 700;
           &:hover{
             cursor: pointer;
             color: var(--orange);
@@ -33,6 +33,7 @@
         }
           
       .n-button{
+        padding: 11px 26px 11px 26px;
         &:hover{
           transform: scale(1.1);
           cursor: pointer;
