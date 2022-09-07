@@ -20,7 +20,7 @@ const Intro = () => {
           <span>Alexis Campomanes</span>
           <span>Fronted Developer with high level of experience in web designing and development, producting the Qhuality work</span>
         </div>
-        <button className='button i-button'>Hire me</button>
+        <button className='button i-button'>Hire Me</button>
         <div className="i-icons">
           <a href="https://github.com/Alexis-Campomanes">
             <img src={GitHub} alt="" />

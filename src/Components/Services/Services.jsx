@@ -16,16 +16,16 @@ const Services = () => {
         <br/> 
         alias optio iusto voluptatem ratione illo nihil, iste eum temporibus id.
         </span>
-        <div className="button s-button">Download CV</div>
+        <button className="button s-button">Download CV</button>
         <div className="blur" style={{
-          background:'#abf1ff94'
+          background:'#abf1ff94',
         }}
         ></div>
       </div>
       {/* right side */}
       <div className="cards">
         <div className='cards-conteiner' style={{
-          left:'9rem'
+          left:'16.5rem'
         }}>
           <Card 
             emoji = {HeartEmoji}
@@ -35,7 +35,7 @@ const Services = () => {
         </div>
         <div className="cards-glasses" style={{
           top: '20rem',
-          left: '24rem'
+          left: '-23rem'
         }}>
           <Card 
             emoji = {Glasses}
@@ -45,7 +45,7 @@ const Services = () => {
         </div>
         <div className="cards-humble" style={{
           top:'28.3rem',
-          left: '-11em'
+          left: '-20rem'
         }}>
           <Card 
             emoji={Humble}

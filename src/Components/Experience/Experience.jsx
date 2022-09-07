@@ -1,5 +1,5 @@
 import React from 'react';
-import Archievement from '../Components/Archievement/Archievement';
+import Archievement from '../Archievement/Archievement';
 import './Experience.scss'
 
 const Experience = () => {
