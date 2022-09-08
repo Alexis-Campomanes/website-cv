@@ -18,7 +18,7 @@ const Footer = () => {
         paddingRight:'0.5rem'
       }}><UilGithub color = 'white' size = '3rem' /></a>
       <a href="https://www.linkedin.com/in/alexiscampomanes/" style={{
-        padding:'0.5rem'
+        paddingRight:'0.5rem'
       }}><UilLinkedin color = 'white' size = '3rem' /></a>
       <a href=""><UilTwitter color = 'white' size = '3rem' /></a>
     </div>

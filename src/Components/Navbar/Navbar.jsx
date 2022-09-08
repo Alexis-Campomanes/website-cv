@@ -1,4 +1,5 @@
 import React from 'react'
+import Toggle from '../Toggle/Toggle'
 import './Navbar.scss'
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
     <div className='n-wrapper'>
       <div className="n-left">
         <div className="n-name">Alexis</div>
-        <span>toggle</span>
+        <Toggle />
       </div>
       <div className="n-right">
         <div className="n-list">
@@ -14,8 +15,7 @@ const Navbar = () => {
             <li>Home</li>
             <li>Services</li>
             <li>Experience</li>
-            <li>Portafolio</li>
-            <li>Testimonials</li>
+            <li>Portfolio</li>
           </ul>
         </div>
         <button className='button n-button'>
