@@ -32,7 +32,9 @@
 
 @media screen and (max-width:480px) {
   .portafolio{
-    margin-top: 30rem;
+    margin-top: 7rem;
+    align-items: center;
+    justify-content: center;
     
     >:nth-child(1){
       font-size: 2rem;

@@ -127,44 +127,13 @@
         font-size: 2.4rem;
         }
       }
+      .blur{
+        display: none;
+      }
     }
       .i-right{
-      .w-background{
-        .withe{
-          transform: scale(0.7);
-        }
-        .img-conteiner{
-          transform: scale(0.6);
-        }
-        .yellow{
-          transform: scale(0.7);
-          left: 3rem !important;
-        }
-        .blue{
-          left: 3rem !important;
-          top: 1rem !important;
-          transform: scale(0.7);
-        }
-        .amazon{
-          left: 16rem !important;
-        }
-        .upword{
-          top: -0.6rem !important;
-        }
-        .facebbok{
-          top: 16.5rem !important;
-          left: -8rem !important;
-        }
-        .fiver{
-          left: -24rem !important;
-        }
-        .shopify{
-          left: 8rem !important;
-        }
-        .img-withe{
-          transform: scale(0.89);
-        }
-      }
+     display: none;
+
     }
   }
 }
