@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 6rem;
     position: relative;
+    padding-top: 3rem;
     .c-left{
       display: flex;
       flex-direction: column;
@@ -32,10 +33,10 @@
     }
     .c-right .user{
       width: 27rem;
-      height: 2rem;
+      height: 2.5rem;
       padding: 0.3rem;
       outline: none;
-      border: 2px solid var(--orange);
+      border: 3px solid var(--orange);
       border-radius: 8px;
       font-size: 12pt;
       &::placeholder{
@@ -63,3 +64,21 @@
       left: 8rem;
     }
 }
+
+@media screen and (max-width: 480px){
+  .contact{
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 2.5rem;
+    .c-left{
+      >:nth-child(1),
+      >:nth-child(2){
+        font-size: 2.4rem;
+        }
+      }
+      .c-right .user{
+        width: 17rem;
+      }
+    }
+  }
+  

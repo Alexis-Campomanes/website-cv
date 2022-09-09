@@ -16,3 +16,14 @@
     margin-top: 30rem;
   }
 }
+
+@media screen and (max-width:480px) {
+  .footer{
+    margin-top: 8rem;
+    height: 100px;
+  }
+  .f-icons{
+    top: -30rem;
+    transform: scale(0.8) !important;
+  }
+}

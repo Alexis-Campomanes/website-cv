@@ -48,7 +48,6 @@
     }
     .cards{
       display: flex;
-      align-items: flex-start;
       flex: 1;
       .cards-conteiner{
         position: relative;
@@ -72,4 +71,37 @@
         
       }
     }
+}
+
+@media screen and (max-width:480px) {
+  .services{
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+    .awesome{
+      >:nth-child(1),
+      >:nth-child(2){
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .cards{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .cards-conteiner{
+    left:40rem !important;
+  }
+  .cards-glasses{
+    left:40rem !important;
+    top: 2rem !important;
+  }
+  .cards-humble{
+    left:40rem !important;
+    top: 4rem !important;
+  }
 }

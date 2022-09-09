@@ -6,14 +6,17 @@ import Humble from '../../img/humble.png';
 import Card from '../Card/Card';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
+import { motion } from 'framer-motion';
 
 const Services = () => {
+
+  const transition = {duration:1, type:'spring'}
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className='services'>
+    <div className='services' id='Services'>
       {/* left side */}
       <div className="awesome">
         <span style={{color: darkMode? 'white' : ''}}>My Awesome</span>
@@ -30,7 +33,11 @@ const Services = () => {
       </div>
       {/* right side */}
       <div className="cards">
-        <div className='cards-conteiner' style={{
+        <motion.div
+        initial = {{left: '34rem'}}
+        whileInView = {{left:'23rem'}}
+        transition = {transition}
+        className='cards-conteiner' style={{
           left:'16.5rem'
         }}>
           <Card 
@@ -38,9 +45,13 @@ const Services = () => {
             heading = {'Design'}
             detail = {'Figma, Sketch, Photoshop, Adobe ilustrator, Adobe xd'}
           />
-        </div>
-        <div className="cards-glasses" style={{
-          top: '20rem',
+        </motion.div>
+        <motion.div 
+          initial ={{left:'-30rem'}}
+          whileInView = {{left: '-21rem'}}
+          transition = {transition}
+          className="cards-glasses" style={{
+          top: '18rem',
           left: '-23rem'
         }}>
           <Card 
@@ -48,8 +59,12 @@ const Services = () => {
             heading = {'Developer'}
             detail = {'Html, Css, JavaScript, React, NodeJs, Express'}
           />
-        </div>
-        <div className="cards-humble" style={{
+        </motion.div>
+        <motion.div 
+          initial={{left:'16rem'}}
+          whileInView={{left:'-18rem'}}
+          transition={transition}
+          className="cards-humble" style={{
           top:'28.3rem',
           left: '-20rem'
         }}>
@@ -58,7 +73,7 @@ const Services = () => {
             heading = {'UI/UX'}
             detail = {'Lorem ipsum durmy text are usually use in section where we need some rando text'}
           />
-        </div>
+        </motion.div>
         <div className="blur-cards" style={{
           background: '#edd0ff'
         }}

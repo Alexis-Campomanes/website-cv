@@ -7,7 +7,7 @@ import Fiver from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
-
+import { motion } from 'framer-motion';
 
 const Works = () => {
 
@@ -31,7 +31,12 @@ const Works = () => {
         ></div>
       </div>
       <div className="i-right">
-        <div className='w-background'>
+        <motion.div 
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: '-40px'}}
+          transition={{duration: 3.5, type: 'spring'}}
+          className='w-background'>
           <div className="blue" style={{
             backgroundColor:'#1986dd',
             left: '22.2rem',
@@ -44,16 +49,16 @@ const Works = () => {
             top: '6rem'
           }}
           ></div>
-          <div className="white"></div>
-          <div className='img-conteiner' style={{
+          <div className="withe"></div>
+          <div className='img-conteiner amazon' style={{
             top:'8rem',
             left: '17.5rem',
           }}>
-            <div className='img-withe'>
+            <div className='img-withe '>
               <img src={Amazon} alt="" />
             </div>
           </div>
-          <div className='img-conteiner' style={{
+          <div className='img-conteiner upword' style={{
             top: '-4rem',
             left: '8rem'
           }}>
@@ -61,7 +66,7 @@ const Works = () => {
               <img src={Upwork} alt="" />
             </div>
           </div>
-          <div className='img-conteiner' style={{
+          <div className='img-conteiner shopify' style={{
             top: '8rem',
             left: '12rem'
           }}>
@@ -69,7 +74,7 @@ const Works = () => {
               <img src={Shopify} alt="" />
             </div>
           </div>  
-          <div className='img-conteiner' style={{
+          <div className='img-conteiner facebbok' style={{
             top: '20rem',
             left: '-9rem'
           }}>
@@ -77,7 +82,7 @@ const Works = () => {
               <img src={Facebook} alt="" />
             </div>
           </div>
-          <div className='img-conteiner' style={{
+          <div className='img-conteiner fiver' style={{
             top: '8rem',
             left: '-31rem'
           }}>
@@ -91,7 +96,7 @@ const Works = () => {
             left: '4rem'
           }}
           ></div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

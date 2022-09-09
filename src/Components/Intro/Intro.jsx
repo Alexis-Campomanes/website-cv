@@ -53,13 +53,13 @@ const Intro = () => {
         transition = {transition}
         src={Glassesimoj1} alt="" />
       <motion.div
-        initial={{top:'-4%', left: '74%'}}
-        whileInView={{left:'68%'}}
+        initial={{top:'-4%', left: '-15rem'}}
+        whileInView={{left:'23rem'}}
         transition={transition}
         style={{
         left: '25rem',
         top: '3rem'
-        }}>
+        }} className= 'floating-div'>
         <FloatingDiv imagen={Crown} text1={'web'} text2={'Developer'} />
       </motion.div>
       <motion.div 
@@ -69,7 +69,7 @@ const Intro = () => {
         style={{
         bottom:'8.6rem',
         left: '2rem'
-      }}>
+      }} className= 'floating-div'>
       <FloatingDiv imagen={Thumbup} text1={'Best Design'} text2={'Award'}/>
       </motion.div>
       {/* blur divs */}
